@@ -64,6 +64,6 @@ var Cursor={
 		if(cont.substring(cont.length-1,cont.length)!="|") 
 			this.write("|");
 		else
-			this.write(" ");
+			this.write("");
 	}
 }
