@@ -53,7 +53,7 @@ var Cursor={
 			var rtn= new RegExp("\n", "g"); 
 			var rts= new RegExp("\\s", "g");
 			var rtt= new RegExp("\\t", "g");
-			$("#terminal").html(text.replace(rtn,"<br/>").replace(rtt,"&nbsp;&nbsp;&nbsp;&nbsp;").replace(rts,"&nbsp;"));
+			$("#terminal").html(text.replace(rtn,"<br/>").replace(rtt,"&nbsp;&nbsp;&nbsp;&nbsp;").replace(rts,"&nbsp;").replace(/\/\*/g, "<span class='comment'>/*").replace(/\*\//g, "*/</span>"));
 			window.scrollBy(0,50); 
 		}
 		
